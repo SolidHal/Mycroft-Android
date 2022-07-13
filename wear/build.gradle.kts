@@ -29,7 +29,7 @@ android {
 	buildToolsVersion = "31.0.0"
 	defaultConfig {
 		applicationId = "mycroft.ai"
-		minSdk = 19
+		minSdk = 21
 		targetSdk = 29
 		versionCode = project.ext.get("versionCode") as Int
 		versionName = project.ext.get("versionName") as String

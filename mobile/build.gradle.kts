@@ -22,7 +22,6 @@ plugins {
 	id("com.android.application")
 	id("com.google.firebase.crashlytics")
 	kotlin("android")
-	id("com.google.gms.google-services")
 }
 android {
 
@@ -30,7 +29,7 @@ android {
 	buildToolsVersion = "31.0.0"
 	defaultConfig {
 		applicationId = "mycroft.ai"
-		minSdk = 19
+		minSdk = 21
 		targetSdk = 29
 		versionCode = project.ext.get("versionCode") as Int
 		versionName = project.ext.get("versionName") as String
@@ -84,8 +83,7 @@ dependencies {
 	androidTestImplementation("androidx.test.ext:junit:1.1.3")
 	androidTestImplementation("androidx.annotation:annotation:1.2.0")
 
-	implementation("com.google.android.gms:play-services-wearable:17.1.0")
-	wearApp(project(":wear"))
+    wearApp(project(":wear"))
 	implementation(project(":shared"))
 	//kotlin
 	implementation("org.jetbrains.kotlin:kotlin-stdlib:1.5.31")

@@ -28,7 +28,7 @@ android {
 	buildToolsVersion = "31.0.0"
 
 	defaultConfig {
-		minSdk = 19
+		minSdk = 21
 		targetSdk = 29
 
 		testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
